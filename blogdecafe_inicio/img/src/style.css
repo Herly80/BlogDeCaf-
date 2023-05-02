@@ -70,8 +70,13 @@ img {
 }
 
 /*Header*/
-.header {
+.webp .header {
+    background-image: url(../coffe-header.webp);
+}
+.no-webp .header {
     background-image: url(../coffe-header.jpg);
+}
+.header {
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;

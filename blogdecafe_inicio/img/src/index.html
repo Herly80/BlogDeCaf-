@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <title>Blog-café</title>
+    <!--Prefetch-->
+    <link rel="prefetch" href="nosotros.html" as="document">
+    <!--Preload-->
+    <link rel="preload" href="normalize.css" as="style">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+    
+    
 </head>
 <body>
     <header class="header">
@@ -38,7 +46,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="../blog.jpg" alt="blog cafe">
+                    <picture>
+                        <source loading="lazy" srcset="../blog.webp" type="image/webp">
+                        <img loading="lazy" src="../blog.jpg" alt="blog cafe">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Un café al trote</h4>
@@ -50,7 +61,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="../blog2.jpg" alt="blog cafe">
+                    <picture>
+                        <source loading="lazy" srcset="../blog2.webp" type="image/webp">
+                        <img loading="lazy" src="../blog2.jpg" alt="blog cafe">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Mezcla para alargar la tarde</h4>
@@ -62,7 +76,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="../torrado.jpg" alt="blog cafe">
+                    <picture>
+                        <source loading="lazy" srcset="../torrado.webp" type="image/webp">
+                        <img loading="lazy" src="../torrado.jpg" alt="blog cafe">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Qué es el Torrado</h4>
@@ -118,5 +135,7 @@
             
         </div>
     </footer>
+
+    <script src="./js/modernizr.js"></script>
 </body>
 </html>
