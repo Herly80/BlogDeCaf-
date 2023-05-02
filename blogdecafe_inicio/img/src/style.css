@@ -71,13 +71,13 @@ img {
 
 /*Header*/
 .webp .header {
-    background-image: url(../coffe-header.webp);
+    background-image: url(./coffe-header.webp);
 }
 .no-webp .header {
-    background-image: url(../coffe-header.jpg);
+    background-image: url(./coffe-header.jpg);
 }
 .header {
-    background-image: url(../coffe-header.jpg);
+    background-image: url(./coffe-header.jpg);
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -271,7 +271,7 @@ img {
 /*Contacto*/
 
 .contacto-bg {
-    background-image: url(../contacto.jpg);
+    background-image: url(./contacto.jpg);
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
