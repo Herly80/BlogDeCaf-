@@ -287,17 +287,20 @@ img {
 .campo {
     display: flex;
     margin-bottom: 2rem;
-    gap: 2rem;
 }
 
 .campo__label {
-    flex: 0 0 9rem; /*su factor de crecimiento va a ser de 0 tampoco se va a hacer más pequeño y su base será de 9rem*/
+    /*su factor de crecimiento va a ser de 0 tampoco se va a hacer más pequeño y su base será de 9rem*/
+    flex: 0 0 9rem; 
+    text-align: right;
+    padding-right: 2rem;
 }
 
-.campo__fields {
-    flex: 1; /*por cada que crezca el label crecera 1px*/
+.campo__field {
+    /*por cada que crezca el label crecera 1px*/
+    flex: 1; 
     border: 1px solid var(--gris);
 }
-.campo__fields--textarea {
+.campo__field--textarea {
     height: 20rem;
 }
